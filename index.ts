@@ -12,27 +12,14 @@ anterior
 let btnEnv = document.getElementById("btnEnviar");
 
 btnEnv.addEventListener("click", () => {
-  // let b: number = Number(base.value);
-  //  let e: number = Number(exponente.value);
-  let b = prompt("Base");
-  let e = prompt("Potencia");
+  let numero = prompt(
+    "Ingrese un numero para averiguar la cantidad de divisores");
 
-  function calcularPotencia(b, e) {
-    let resultado: number = b;
-
-    for (let i = 1; i < e; i++) {
-      resultado = resultado * b;
+  function cantidadDeDivisores(numero): number {
+    let resultado: number = 0;
+    for (let i = 1; i <=numer;, i++){
     }
-    //if (e = 0) {
-    if (e === 0) {
-      resultado = 1;
-    }
-    console.log(resultado);
   }
 
-  while (e < 0) {
-    b = prompt("Base");
-    e = prompt("Potencia");
-  }
-  calcularPotencia(b, e);
+  cantidadDeDivisores(numero);
 });
