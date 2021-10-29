@@ -8,18 +8,24 @@ reciba un número entero y devuelva la cantidad de divisores
 anterior
 
 */
+function cantidadDeDivisores(n1: number): number {
+  let resultado: number = 0;
 
-let btnEnv = document.getElementById("btnEnviar");
+  for (let i: number = 1; i <= n1; i++) {}
 
-btnEnv.addEventListener("click", () => {
-  let numero = prompt(
-    "Ingrese un numero para averiguar la cantidad de divisores");
-
-  function cantidadDeDivisores(numero): number {
-    let resultado: number = 0;
-    for (let i = 1; i <=numer;, i++){
-    }
+  if (resto === 0) {
+    boleana = true;
+  } else {
+    boleana = false;
   }
+  return boleana;
+}
 
-  cantidadDeDivisores(numero);
-});
+//let n1: number = Number(prompt("Primer múltiplo"));
+//let n2: number = Number(prompt("Segundo múltiplo"));
+let resultado: boolean = esMultiplo(n1, n2);
+if (resultado === true) {
+  console.log("ES MULTIPLO");
+} else {
+  console.log("NO ES MULTIPLO");
+}
